@@ -27,16 +27,16 @@
   src: url("./SophiaMorgant.ttf");
 }
 @font-face {
-  font-family: Amperzand;
-  src: url("./Callingstone.ttf");
+  font-family: txtfont;
+  src: url("./txtstyle.otf");
 }
 :root {
   --c-bg: hsl(1, 17%, 95%);
   --c-text: hsl(0, 15%, 55%);
-  --font-family: sans-serif;
+  --font-family: txtfont, sans-serif;
   --font-title: SophiaMorgant, serif;
   --font-size: 1.5rem;
-  --font-lineheight: 26px;
+  --font-size-xl: 3rem;
   --font-weight: 400;
   --font-style: normal;
   --l-regular: 24rem;
@@ -44,7 +44,7 @@
   --l-archive: 37rem;
   --l-archive-wide: 57rem;
   --l-text: 19rem;
-  font-size: var(--font-lineheight);
+  font-size: var(--font-size);
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   font-style: var(--font-style);
@@ -72,8 +72,8 @@
 }
 @media (min-width: 992px) {
   :root {
-    --font-size: 25px;
-    --font-lineheight: 34px;
+    --font-size: 1.5rem;
+    --font-size-xl: 2rem;
     --fs-800: 4.5rem;
     --card-height: 5rem;
     --clock-font-size: 3.5rem;
@@ -339,6 +339,14 @@ section {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.kalpsvg{
+  width: 3rem;
+}
+@media (min-width: 992px)  {
+  .kalpsvg{
+    width: 1rem;
+  }
+}
 .name-row {
   display: flex;
   width: 100%;
@@ -354,6 +362,10 @@ section {
 
 .bigspan {
   text-align: center;
+}
+.timertitle{
+  text-align: center;
+  font-size: var(--font-size-xl);
 }
 
 .filler {
@@ -391,14 +403,10 @@ section {
   content: attr(data-type);
   color: var(--clr-primary-500);
   text-transform: uppercase;
-  font-weight: var(--fw-600);
-  font-size: 0.7rem;
-  letter-spacing: 2px;
   width: 100%;
   text-align: center;
   position: absolute;
   left: 0;
-  bottom: -25px;
 }
 
 .span {
