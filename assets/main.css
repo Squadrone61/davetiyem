@@ -140,14 +140,10 @@ body {
   margin: auto;
   font-family: var(--font-title);
   font-size: 12vmin;
-  line-height: 3rem;
 }
 .opening-title span {
   display: inline;
   font-size: inherit;
-}
-.opening-title span:nth-child(2) {
-  margin: 0 0.3em;
 }
 .text {
   text-align: center;
@@ -285,14 +281,14 @@ section {
   justify-content: space-evenly;
 }
 .fade-in.up {
-  animation: fadeInUp 3sn;
+  animation: fadeInUp 3s;
   -webkit-animation: fadeInUp 3s;
   -moz-animation: fadeInUp 3s;
   -o-animation: fadeInUp 3s;
   -ms-animation: fadeInUp 3s;
 }
 .fade-in.down {
-  animation: fadeInDown 3sn;
+  animation: fadeInDown 3s;
   -webkit-animation: fadeInDown 3s;
   -moz-animation: fadeInDown 3s;
   -o-animation: fadeInDown 3s;
@@ -336,7 +332,12 @@ section {
   }
 }
 .kalp {
-  font-size: 6vmin !important;
+  color: var(--c-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .name-row {
   display: flex;
