@@ -44,6 +44,7 @@
   --l-archive: 37rem;
   --l-archive-wide: 57rem;
   --l-text: 19rem;
+  --radius: 10px;
   font-size: var(--font-size);
   font-family: var(--font-family);
   font-weight: var(--font-weight);
@@ -73,8 +74,8 @@
 }
 @media (min-width: 992px) {
   :root {
-    --font-size: 1.5rem;
-    --font-size-xl: 2rem;
+    --font-size: 1.25rem;
+    --font-size-xl: 1.75rem;
     --fs-800: 4.5rem;
     --card-height: 5rem;
     --clock-font-size: 3.5rem;
@@ -274,6 +275,7 @@ section {
 .page-container {
   margin: auto;
   width: 90%;
+  max-height: 50vh;
 }
 @media (min-width: 992px) {
   .page-container {
@@ -345,7 +347,7 @@ section {
   transform: translate(-50%, -50%);
 }
 .kalpsvg {
-  width: 3rem;
+  width: 2.5rem;
 }
 @media (min-width: 992px) {
   .kalpsvg {
@@ -371,6 +373,8 @@ section {
 .timertitle {
   text-align: center;
   font-size: var(--font-size-xl);
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
 }
 
 .filler {
@@ -640,6 +644,8 @@ footer a:hover svg {
 .timeline--single:nth-child(odd) .timeline--details {
   flex: 1;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline--single:nth-child(odd) .time--date {
@@ -658,6 +664,8 @@ footer a:hover svg {
 .timeline--single:nth-child(even) .timeline--details {
   flex: 1;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline--info {
@@ -674,7 +682,7 @@ footer a:hover svg {
   position: absolute;
   width: 10rem;
   height: 2px;
-  top: 2.5rem;
+  top: 50%;
   background: var(--c-text);
 }
 
@@ -689,10 +697,94 @@ footer a:hover svg {
   margin: auto 0;
 }
 
+.timeline--icon {
+  width: 5rem;
+}
+
 .locationbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
   border-bottom: 1px solid;
+}
+
+.menubtn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+}
+
+.menuicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-neutral-900);
+  overflow-x: hidden;
+  padding-top: 5rem;
+  transition: 0.5s;
+}
+
+.sidenav.visible {
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  .sidenav.visible {
+    width: 15rem;
+  }
+}
+
+.sidenav a {
+  padding: 1rem 2rem;
+  display: block;
+  transition: 0.3s;
+  color: black;
+}
+
+.sidenav a.alt {
+  padding: 1rem 4rem;
+  font-size: smaller;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+}
+
+.btn {
+  background-color: var(--c-text);
+  color: black;
+  border: none;
+  border-radius: var(--radius);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.btn-container{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.m-auto{
+  margin: auto
+}
+
+.map-container{
+  background-color: var(--c-text);
+  padding: 1rem;
+  border-radius: var(--radius);
 }

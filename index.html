@@ -41,7 +41,7 @@
     <link href="assets/main.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="opening arkaplan fade-in">
+    <section id="welcome" class="opening arkaplan fade-in">
       <h1 class="opening-title">
         <span class="fade-in down">Hatice</span>
         <span class="kalp">
@@ -90,12 +90,12 @@
           </div>
           <div class="name-row">
             <div class="name">
-              <span class="bigspan">Maşide - Mehmet</span>
-              <span class="bigspan">AKYÜZ</span>
-            </div>
-            <div class="name">
               <span class="bigspan">Emine - Hasan</span>
               <span class="bigspan">DEMİRCİ</span>
+            </div>
+            <div class="name">
+              <span class="bigspan">Maşide - Mehmet</span>
+              <span class="bigspan">AKYÜZ</span>
             </div>
           </div>
         </div>
@@ -106,14 +106,12 @@
       <img class="illustration" src="assets/geçiş1.webp" />
     </div>
 
-    <section>
+    <section id="kınagecesi">
       <div class="page-container h-80">
         <div class="auto-spacing h-80">
           <div class="name">
-            <span class="timertitle"
-              >KINA <br />
-              21.06.2024 | 16:00</span
-            >
+            <span class="timertitle">KINA GECESİ </span><br />
+            <span class="bigspan">21.06.2024 | 15:00</span>
           </div>
           <div id="kınatimer" class="container">
             <div class="container-sub" data-type="gün">
@@ -164,7 +162,7 @@
       <img class="illustration" src="assets/geçiş2.webp" />
     </div>
 
-    <section>
+    <section id="kınaprogramı">
       <div class="page-container">
         <div class="name">
           <span class="bigspan">KINA PROGRAMI</span>
@@ -172,35 +170,35 @@
         <div class="timeline at-timeline">
           <div class="timeline--single">
             <div class="timeline--details text-right">
-              <h4 class="timeline--title">Karşılama</h4>
-              <h4 class="timeline--title">15:00</h4>
+              <span class="timeline--title">Karşılama</span>
+              <span class="timeline--title">15:00</span>
             </div>
             <div class="timeline--info">
-              <h4 class="timeline--title">
-                <img class="h-100" src="assets/saat.svg" />
-              </h4>
+              <span class="timeline--title">
+                <img class="timeline--icon" src="assets/saat.svg" />
+              </span>
             </div>
           </div>
           <div class="timeline--single">
             <div class="timeline--info right">
-              <h4 class="timeline--title">
-                <img class="h-100" src="assets/yemek.svg" />
-              </h4>
+              <span class="timeline--title">
+                <img class="timeline--icon" src="assets/yemek.svg" />
+              </span>
             </div>
             <div class="timeline--details reverse">
-              <h4 class="timeline--title">Yemek</h4>
-              <h4 class="timeline--title">16:00</h4>
+              <span class="timeline--title">Yemek</span>
+              <span class="timeline--title">16:00</span>
             </div>
           </div>
           <div class="timeline--single">
             <div class="timeline--details text-right">
-              <h4 class="timeline--title">Kına</h4>
-              <h4 class="timeline--title">18:00</h4>
+              <span class="timeline--title">Kına</span>
+              <span class="timeline--title">18:00</span>
             </div>
             <div class="timeline--info">
-              <h4 class="timeline--title">
-                <img class="h-100" src="assets/kına.svg" />
-              </h4>
+              <span class="timeline--title">
+                <img class="timeline--icon" src="assets/kına.svg" />
+              </span>
             </div>
           </div>
         </div>
@@ -210,46 +208,45 @@
     <div class="section-footer">
       <img class="illustration" src="assets/geçiş1.webp" />
     </div>
-    <section>
+
+    <section id="kınayer">
       <div class="page-container">
         <div class="locationbox">
-          <img style="width: 2.5rem" src="assets/yer.svg" />
-          <span class="bigspan"> Arzen Düğün Salonu</span>
+          <span class="bigspan">Arzen Düğün Salonu</span>
         </div>
-        <div style="overflow: hidden; max-width: 100%; height: 500px">
-          <div
-            id="embed-ded-map-canvas"
-            style="height: 100%; width: 100%; max-width: 100%"
+        <div class="btn-container">
+          <a
+            class="btn m-auto"
+            target="_blank"
+            href="https://maps.app.goo.gl/6spByE2CSGCci8RY9"
           >
-            <iframe
-              style="height: 100%; width: 100%; border: 0"
-              frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?q=arzen+park+düğün+salonu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-            ></iframe>
-          </div>
-          <style>
-            #embed-ded-map-canvas img {
-              max-width: none !important;
-              background: none !important;
-              font-size: inherit;
-              font-weight: inherit;
-            }
-          </style>
+            <img style="width: 2.5rem" src="assets/yer.svg" />Yol Tarifi
+          </a>
         </div>
+        <iframe
+          class="map-container"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.8632054338527!2d41.19060057638351!3d39.92207738559649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406e591c09013c95%3A0x5e916feb07890835!2sARZEN%20Park!5e0!3m2!1str!2str!4v1716051674161!5m2!1str!2str"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
     <div class="section-footer">
       <img class="illustration" src="assets/geçiş3.webp" />
     </div>
-    <section>
+
+    <section id="nikah">
       <div class="page-container h-80">
         <div class="auto-spacing h-80">
           <div class="name">
-            <span class="timertitle"
-              >NİKAH <br />
-              24.06.2024 | 18:00</span
-            >
+            <span class="timertitle">NİKAH </span>
+            <br />
+            <span>24.06.2024 | 18:00</span>
           </div>
           <div id="nikahtimer" class="container">
             <div class="container-sub" data-type="gün">
@@ -299,7 +296,8 @@
     <div class="section-footer">
       <img class="illustration" src="assets/geçiş3.webp" />
     </div>
-    <section>
+
+    <section id="nikahprogramı">
       <div class="page-container">
         <div class="name">
           <span class="bigspan">NİKAH PROGRAMI</span>
@@ -307,35 +305,35 @@
         <div class="timeline at-timeline">
           <div class="timeline--single">
             <div class="timeline--details text-right">
-              <h4 class="timeline--title">Karşılama</h4>
-              <h4 class="timeline--title">18:00</h4>
+              <span class="timeline--title">Karşılama</span>
+              <span class="timeline--title">18:00</span>
             </div>
             <div class="timeline--info">
-              <h4 class="timeline--title">
-                <img class="h-100" src="assets/saat.svg" />
-              </h4>
+              <span class="timeline--title">
+                <img class="timeline--icon" src="assets/saat.svg" />
+              </span>
             </div>
           </div>
           <div class="timeline--single">
             <div class="timeline--info right">
-              <h4 class="timeline--title">
-                <img class="h-100" src="assets/yemek.svg" />
-              </h4>
+              <span class="timeline--title">
+                <img class="timeline--icon" src="assets/yemek.svg" />
+              </span>
             </div>
             <div class="timeline--details reverse">
-              <h4 class="timeline--title">Yemek</h4>
-              <h4 class="timeline--title">18:00</h4>
+              <span class="timeline--title">Yemek</span>
+              <span class="timeline--title">18:00</span>
             </div>
           </div>
           <div class="timeline--single">
             <div class="timeline--details text-right">
-              <h4 class="timeline--title">Nikah</h4>
-              <h4 class="timeline--title">19:00</h4>
+              <span class="timeline--title">Nikah</span>
+              <span class="timeline--title">19:00</span>
             </div>
             <div class="timeline--info">
-              <h4 class="timeline--title">
-                <img class="h-100" src="assets/yüzük.svg" />
-              </h4>
+              <span class="timeline--title">
+                <img class="timeline--icon" src="assets/yüzük.svg" />
+              </span>
             </div>
           </div>
         </div>
@@ -345,36 +343,78 @@
     <div class="section-footer">
       <img class="illustration" src="assets/geçiş1.webp" />
     </div>
-    <section>
+
+    <section id="nikahyer">
       <div class="page-container">
         <div class="locationbox">
-          <img style="width: 2.5rem" src="assets/yer.svg" />
-          <span class="bigspan"> Mercan Korupark</span>
+          <span class="bigspan">Mercan Korupark</span>
         </div>
-        <div
-          style="overflow: hidden; max-width: 100%; height: 500px"
-        >
-          <div
-            id="embed-ded-map-canvas"
-            style="height: 100%; width: 100%; max-width: 100%"
+        <div class="btn-container">
+          <a
+            class="btn m-auto"
+            target="_blank"
+            href="https://maps.app.goo.gl/ttcTCA1iFTvDkHJ57"
           >
-            <iframe
-              style="height: 100%; width: 100%; border: 0"
-              frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?q=Mercan+korupark&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-            ></iframe>
-          </div>
-          <style>
-            #embed-ded-map-canvas img {
-              max-width: none !important;
-              background: none !important;
-              font-size: inherit;
-              font-weight: inherit;
-            }
-          </style>
+            <img style="width: 2.5rem" src="assets/yer.svg" />Yol Tarifi
+          </a>
+        </div>
+        <iframe
+          class="map-container"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.7977518127323!2d39.620837176424935!3d41.007799719453864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406415f1f26c86dd%3A0xbb6257f3a9c58333!2sMercan%20Korupark!5e0!3m2!1str!2str!4v1716051776841!5m2!1str!2str"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <div class="section-footer">
+      <img class="illustration" src="assets/geçiş2.webp" />
+    </div>
+
+    <section>
+      <div class="page-container">
+        <div class="name">
+          <span></span>
         </div>
       </div>
     </section>
+
+    <button class="menubtn" onclick="menuTrigger()">
+      <img class="menuicon" src="assets/menu.svg" />
+    </button>
+
+    <div id="menu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="menuTrigger()"
+        >&times;</a
+      >
+      <a href="#welcome">Giriş</a>
+      <a href="#kınagecesi">Kına</a>
+      <a class="alt" href="#kınagecesi">Tarih</a>
+      <a class="alt" href="#kınaprogramı">Program</a>
+      <a class="alt" href="#kınayer">Adres</a>
+      <a href="#nikah">Nikah</a>
+      <a class="alt" href="#nikah">Tarih</a>
+      <a class="alt" href="#nikahprogramı">Program</a>
+      <a class="alt" href="#nikahyer">Adres</a>
+    </div>
   </body>
   <script src="flipclock.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+    function menuTrigger() {
+      document.getElementById("menu").classList.toggle("visible");
+    }
+  </script>
 </html>
