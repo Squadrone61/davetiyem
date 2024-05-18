@@ -693,6 +693,6 @@ footer a:hover svg {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid;
-  border-radius: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
 }
