@@ -82,5 +82,5 @@ function initTimer(elementId, datestr) {
   setInterval(countDown, 1000);
 }
 
-initTimer("kınatimer", "June 21 2024 16:00");
-initTimer("nikahtimer", "June 24 2024 18:00");
+initTimer("kınatimer", "June 21 2024 15:00");
+initTimer("nikahtimer", "June 24 2024 19:00");
