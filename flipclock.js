@@ -83,4 +83,4 @@ function initTimer(elementId, datestr) {
 }
 
 initTimer("kınatimer", "June 21 2024 15:00");
-initTimer("nikahtimer", "June 24 2024 19:00");
+initTimer("nikahtimer", "June 24 2024 18:45");
